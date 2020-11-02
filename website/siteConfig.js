@@ -40,7 +40,7 @@ const siteConfig = {
   /* path to images for header/footer */
   headerIcon: 'img/header_logo.png',
   footerIcon: 'img/header_logo.png',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/header_logo.png',
 
   /* Colors for website */
   colors: {
@@ -62,13 +62,13 @@ const siteConfig = {
   },
   */
   algolia: {
-    placeholder: 'Ask me something'
+    placeholder: 'Search'
   },
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Browzwear`,
   usePrism: ['javascript', 'js', 'jsx', 'java', 'objective-c', 'json','py'],
   highlight: {
-    theme: 'default'
+    theme: 'solarized-dark'
   },
 
   // Add custom scripts here that would be placed in <script> tags.
