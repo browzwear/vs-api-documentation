@@ -9,7 +9,9 @@ If you wish to create a custom template you can take a look at the default templ
 ## Create a Custom Generator
 You can integrate your own Tech-Pack generator into Lotta / VStitcher, by changing the Tech-Pack Processor executable path in the Preferences dialog.</br>
 After choosing your generator, each time a Tech-Pack will be created, your executable will be called with the following command-line: </br>
-```<your-executable> <tech-pack-directory> <template-name> <language-code>```
+```
+<your-executable> <tech-pack-directory> <template-name> <language-code>
+```
 
 Where the arguments are as follows: </br>
 **tech-pack-directory:** The full path to the exported Tech-Pack directory (the one where output.json is) </br>

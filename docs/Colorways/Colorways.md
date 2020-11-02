@@ -11,6 +11,7 @@ For full documentation, refer to 'BWPluginAPI_Colorway.h' in the plugin pack.
 ## Deleting a colorway
 The code snippet below shows how to delete a colorway. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -35,6 +36,7 @@ The code snippet below shows how to delete a colorway. <br/>
 ## Getting the current colorway
 The code snippet below shows how to get the current colorway.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -58,6 +60,7 @@ The code snippet below shows how to get the current colorway.
 ## Setting the current colorway
 The code snippet below shows how to set the current colorway. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -84,6 +87,7 @@ The code snippet below shows how to set the current colorway. <br/>
 The code snippet below shows how to clone a colorway.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -110,6 +114,7 @@ The code snippet below shows how to clone a colorway.
 ## Getting the material ids of a colorway
 The code snippet below shows how to get the material ids of a colorway.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -137,6 +142,7 @@ The code snippet below shows how to get the material ids of a colorway.
 The code snippet below shows how to get the name of a colorway.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -165,6 +171,7 @@ The code snippet below shows how to get the name of a colorway.
 The code snippet below shows how to set the name of a colorway.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 
@@ -194,6 +201,7 @@ The code snippet below shows how to get the colors in use in a colorway. The ret
 Note: color is represented by RGB data.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -224,6 +232,7 @@ The code snippet below shows how to update a color in use in a colorway. The fun
 Note: color is represented by RGB data.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python

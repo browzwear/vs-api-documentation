@@ -6,6 +6,7 @@ title: Create a Techpack
 ## Exporting the tech pack
 The code snippet below shows how to export the tech pack for the current garment. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   garmentId = BwApi.GarmentId()

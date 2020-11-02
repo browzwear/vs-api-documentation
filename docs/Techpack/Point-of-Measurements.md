@@ -10,6 +10,7 @@ For full documentation, refer to 'BWPluginAPI_Ruler.h' in the plugin pack.
 ## Creating a ruler
 The code snippet below shows how to create a ruler in a garment. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -62,6 +63,7 @@ The code snippet below shows how to create a ruler in a garment. <br/>
 ## Getting ruler ids
 The code snippet below shows how to get all the ruler ids in a garment. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -91,6 +93,7 @@ The code snippet below shows how to get all the ruler ids in a garment. <br/>
 ## Getting a ruler name
 The code snippet below shows how to get a ruler name. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -120,6 +123,7 @@ The code snippet below shows how to get a ruler name. <br/>
 ## Getting the length of a ruler
 The code snippet below shows how to get the length of a ruler. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -157,6 +161,7 @@ The code snippet below shows how to get the length of a ruler. <br/>
 ## Getting the 3D length of a ruler
 The code snippet below shows how to get the 3D length of a ruler. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python

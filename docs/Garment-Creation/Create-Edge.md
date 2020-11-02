@@ -6,6 +6,7 @@ title: Create Edge
 The code snippet below shows how to add an edge to an existing shape.
 
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python

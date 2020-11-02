@@ -4,6 +4,7 @@ title: Get bounding box material
 ---
 The code snippet below shows how to get the bounding box of a material. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
 # Get the material width, height and count for all visible materials (works only on artwork and trim3d)

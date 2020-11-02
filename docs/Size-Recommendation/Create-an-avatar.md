@@ -9,11 +9,11 @@ title: Create an avatar
 The code snippet below shows how to create an avatar from a template.
 <br/>
 Python:
-```  python
+```python
   BwApi.AvatarCreate(BwApi.AvatarTemplates()[0], "Avatar 1")
 ```
 C++:
-```  cpp
+```cpp
   BwApiVectorString* avatarTemplates = BwApiVectorStringCreate();
   BwApiAvatarTemplates(avatarTemplates);
   const char* firstAvatarTemplate = BwApiVectorStringItem(avatarTemplates, 0);
@@ -21,7 +21,7 @@ C++:
   BwApiAvatarCreate(firstAvatarTemplate, "Avatar 1", avatarId);
 ```
 C#:
-```  csharp
+```csharp
   BwApiVectorString templates = new BwApiVectorString();
   BwApi.AvatarTemplates(templates);
   string avatarId;

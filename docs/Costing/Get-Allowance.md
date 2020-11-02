@@ -4,6 +4,7 @@ title: Get Allowance
 ---
 The code snippet below shows how to get edge's seam allowance. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
 # get an existing material surface area (works only on shapes and artworks)

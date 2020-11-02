@@ -7,7 +7,7 @@ title: Get avatar measurement
 The code snippet below shows how to get the measurements of the current avatar in VStitcher/Lotta. The avatar measurement get function returns a JSON file (as a string) that contains all the avatar's measurement information. This JSON object is validated to the avatar measurements schema.
 <br/>
 Example of avatar properties in JSON format:
-```{.json}
+```json
 {
 	"Body Shaping": {
 		"apex_distance": 0.0,
@@ -32,16 +32,16 @@ Example of avatar properties in JSON format:
 }
 ```
 Python:
-```  python
+```python
   avatar_measurements = BwApi.AvatarMeasurementsGet()
 ```
 C++:
-```  cpp
+```cpp
   BwApiString* avatarMeasurement = BwApiStringCreate();
   BwApiAvatarMeasurementsGet(avatarMeasurement);
 ```
 C#:
-```  csharp
+```csharp
   string avatarMeasurement;
   BwApi.AvatarMeasurementsGet(out avatarMeasurement);
 ```
@@ -52,17 +52,17 @@ C#:
 The code snippet below shows how to update the measurements of the current avatar in VStitcher/Lotta. The avatar measurement set function receives a JSON file (as a string) that contains all the avatar's measurement information. The JSON file must be validated against the avatar measurement schema.
 <br/>
 Python:
-```  python
+```python
   # assuming avatar_measurements is a valid avatar measurements object
   BwApi.AvatarMeasurementsUpdate(avatar_measurements)
 ```
 C++:
-```  cpp
+```cpp
   // assuming avatarProperties is a valid avatar measurements object
   BwApiAvatarMeasurementsUpdate(avatarProperties);
 ```
 C#:
-```  csharp
+```csharp
   // assuming avatarProperties is a valid avatar measurements object
   BwApi.AvatarMeasurementsUpdate(out avatarProperties);
 ```

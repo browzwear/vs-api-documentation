@@ -2,8 +2,10 @@
 id: Initialize
 title: Initialize
 ---
-<!--DOCUSAURUS_CODE_TABS-->
+
 As described in the plugin creation step, every plugin must implement and export an initialize function (BwApiPluginInit), returning 1 for a successful initialization.
+
+<!--DOCUSAURUS_CODE_TABS-->
 
 <!--Python-->
 

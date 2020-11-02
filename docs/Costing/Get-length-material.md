@@ -4,6 +4,7 @@ title: Get length material
 ---
 The code snippet below shows how to get length and depth of a material. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
 # get an existing material length and depth (works only on lines and seams)

@@ -43,7 +43,7 @@ class BwApiPlugin
 ## Create plugin.json file to your plugin
 Create a file named plugin.json in the plugin folder. refer to "..\BWPlugin\schema\plugin_manifest.json" for more information.</br>
    Example of plugin.json file:
-```{.json}
+```json
 	{
 		"identifier": {Your identifier},
 		"name": {Your plugin name},

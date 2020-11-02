@@ -10,7 +10,7 @@ Browzwear supports writing a plugin in Python 3.6+. Follow these steps to create
 ```cpp
    Windows:  %localappdata%\Browzwear\VStitcher\plugins
    Mac:      ~/Library/Application Support/Browzwear/VStitcher/Plugins
-```   
+``` 
    Note: If the Plugins folder doesn't exist, create it.
 3. Create a new folder for your plugin.
 4. Create another folder to contain the python plugin files - this will be the plugin package.
@@ -25,6 +25,7 @@ Browzwear supports writing a plugin in Python 3.6+. Follow these steps to create
 
   from sample import *
 ```
+
 ```python
   # sample.py file
 
@@ -38,7 +39,7 @@ Browzwear supports writing a plugin in Python 3.6+. Follow these steps to create
 ```
 6. Create a file named plugin.json in the plugin folder. refer to "..\BWPlugin\schema\plugin_manifest.json" for more information.</br>
    Example of plugin.json file:
-```{.json}
+```json
 	{
 		"identifier": {Your identifier},
 		"name": {Your plugin name},
@@ -115,15 +116,16 @@ To have Eclipse recognize Browzwear Python library (BwApi):
 src
 |- __init__.py
 |- sample.py
- ```
+```
+
 6. Update the `__init__.py` file with the following content:
 
-```py
+```python
 import * from sample
 ```
 7. Update the `sample.py` file with the following content:
 
-```py
+```python
 # import Browzwear API library
 import BwApi
 
@@ -153,7 +155,7 @@ callbackMenu = CallbackMenu()
 5. Click **Close**
 6. Go back to your `sample.py` file and add the following code to the initialize function:
 
-```py
+```python
 import sys
 sys.path.append(<path to pydevd/pysrc>)
 

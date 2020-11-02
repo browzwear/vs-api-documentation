@@ -11,6 +11,7 @@ For full documentation, refer to 'BWPluginAPI_Cluster.h' in the plugin pack.
 ## Creating a cluster
 The code snippet below shows how to create a cluster.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -46,6 +47,7 @@ The code snippet below shows how to create a cluster.
 Creating a cluster without any shape doesn't do anything. <br/>
 The code snippet below shows how to add an existing shape to an existing cluster. A cluster may have more than one shape associated with it.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -75,9 +77,10 @@ The code snippet below shows how to add an existing shape to an existing cluster
 ## Setting shape offset on a cluster
 The code snippet below shows how to set the shape offset from the cluster hanging point.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
-```py
+```
   # Get the current shape offset
   offset = BwApi.ClusterShapeOffsetGet(garmentId, clusterId, shapeId)
 
@@ -123,6 +126,7 @@ The code snippet below shows how to set the shape offset from the cluster hangin
 ## Removing a shape from a cluster
 The code snippet below shows how to remove a shape from a cluster.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -147,6 +151,7 @@ The code snippet below shows how to remove a shape from a cluster.
 ## Deleting a cluster
 The code snippet below shows how to remove a cluster. Shapes associated with the cluster have no cluster after this action completes.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python

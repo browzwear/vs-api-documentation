@@ -6,6 +6,7 @@ title: Bill of Material
 ## Getting colorway IDs
 The code snippet below shows how to get the colorway ids in the garment in the right order. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   garment_id = BwApi.GarmentId()
@@ -34,6 +35,7 @@ The code snippet below shows how to get the colors in use in a colorway. The ret
 Note: color is represented by RGB data.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   # assuming the colorway_id is a valid colorway id
@@ -54,6 +56,7 @@ The code snippet below shows how to get the colors in use in a colorway. The ret
 Note: color is represented by RGB data.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   colors_in_use = BwApi.ColorwayColorsInUseGet(garment_id, colorway_id)

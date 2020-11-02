@@ -11,6 +11,7 @@ For full documentation, refer to 'BWPluginAPI_Color.h' in the plugin pack.
 Browzwear allow you to programmatically add a new color library to the Browzwear's app.
 The API for creating a new color library receive JSON (as string) that contains all the information and colors for this library. For more information, refer to: app installation folder\Resources\schema\v1\color_lib.json
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -36,6 +37,7 @@ The API for creating a new color library receive JSON (as string) that contains 
 ## Adding an existing color library
 You can also add an existing color library from file. Browzwear support Adobe files (.ASE, .ACO) and JSON color library which is compatible with the color-lib schema as described on the create color library section.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 
@@ -61,6 +63,7 @@ You can also add an existing color library from file. Browzwear support Adobe fi
 ## Getting colors from a library
 Like as you can set the colors when creating a library you can get the colors as JSON object (string) from an existing library. The response can look like the 'colors' section in the example color library above.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   colors = BwApi.ColorLibraryGetColors(garmentId, colorLibId)

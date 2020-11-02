@@ -6,6 +6,7 @@ title: Dress a garment
 The code snippet below shows how to start garment dress simulation on the current avatar. 
 
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python

@@ -12,9 +12,10 @@ For full documentation, refer to 'BWPluginAPI_Material.h' in the plugin pack.
 ## Importing U3M
 The code snippet below shows how to import a material to a garment from a U3M format file. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
-```  python
+```python
   garment_id = BwApi.GarmentId()
   colorwayId = BwApi.ColorwayCurrentGet(garment_id )
   full_path = '<path to the u3m>'
@@ -22,7 +23,7 @@ The code snippet below shows how to import a material to a garment from a U3M fo
 ```
 <!--C++-->
 
-```  cpp
+```cpp
   BwString garmentId;
   BwApiGarmentId(garmentId);
   int colorwayId;
@@ -32,7 +33,7 @@ The code snippet below shows how to import a material to a garment from a U3M fo
 ```
 <!--C#-->
 
-```  csharp
+```csharp
   string garmentId;
   BwApi.GarmentId(out garmentId);
   int colorwayId;
@@ -46,9 +47,10 @@ The code snippet below shows how to import a material to a garment from a U3M fo
 ## Exporting U3M
 The code snippet below shows how to export material from a garment in U3M format. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
-```  python
+```python
   garment_id = BwApi.GarmentId()
   colorwayId = BwApi.ColorwayCurrentGet(garment_id )
   full_path = '<path to export the u3m>'
@@ -56,7 +58,7 @@ The code snippet below shows how to export material from a garment in U3M format
 ```
 <!--C++-->
 
-```  cpp
+```cpp
   BwString garmentId;
   BwApiGarmentId(garmentId);
   int colorwayId;
@@ -80,6 +82,7 @@ The code snippet below shows how to export material from a garment in U3M format
 ## Getting material by id
 You can also get an existing material as a JSON string. The response looks like the example above. For more information, refer to: app installation folder\Resources\schema\v2\material.json.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -107,6 +110,7 @@ BwApi.MaterialGet(garmentId, colorwayId, materialId, out materialJson);
 ## Deleting a material
 The code snippet below shows how to delete an existing material. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -132,6 +136,7 @@ BwApi.MaterialDelete(garmentId, colorwayId, materialId);
 ## Cloning material
 The code snippet below shows how to clone an existing material to any colorway. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -158,6 +163,7 @@ BwApi.MaterialClone(garmentId, colorwayId, materialId, destColorwayId, out newMa
 ## Updating a material
 The code snippet below explain how to update an existing material. <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 

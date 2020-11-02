@@ -10,6 +10,7 @@ You can add menu items to your plugin in order to run operations in VStitcher. <
 Note: You will see your menu item under "Plugins" if at least one menu item exists.
 
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   class Callback(BwApi.CallbackBase):
@@ -71,6 +72,7 @@ public:
   }
 
 ```
+
 <!--END_DOCUSAURUS_CODE_TABS-->
 
 ## Versioning
@@ -78,7 +80,7 @@ public:
   To support backward compatability if the 'api_version' field is not exist on the plugin.json then version 1 will be used. </br>
   In order to be able to use the latest API schemas and functions please add the 'api_version' with the right value </br>
   For example:
-  ```
+```json
  	{
  		"identifier": "com.browzwear.sample",
  		"name": "Sample plugin",
@@ -87,7 +89,7 @@ public:
  		"main": "src",
  		"version": "1.0.1"
  	}
- ```
+```
 
 ## Plugin Manager in VStitcher
 The Plugin Manager allows you to manage all of the plugins that are connected to Browzwear.
@@ -109,6 +111,7 @@ You can register your plugin to be notified when certain system events happen. <
 The support events are: POST_INTIALIZE (Browzwear UI is ready), GARMENT_OPEN, GARMENT_NEW, GARMENT_SAVED, GARMENT_CLOSED, and GARMENT_MODIFIED.
 
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   class EventCallback(BwApi.CallbackBase):
@@ -187,6 +190,7 @@ For example, you can create your own thread that listens to file changes and whe
 Browzwear will call your plugin during the next idle. The operation itself must be on the main thread, but the request for plugin processing time can be called from a separate thread. <br/>
 ![alt-text](../assets/thread.png)
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
 import BwApi

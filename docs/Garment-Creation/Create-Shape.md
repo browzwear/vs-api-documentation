@@ -6,6 +6,7 @@ title: Create Shape
 The code snippet below shows how to create a new shape. <br/>
 After the shape creation, there will be no representation of this shape in the system until you add edges to this shape. For more information, refer to [Create Edge](Create-Edge.md).
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python

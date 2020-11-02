@@ -11,6 +11,7 @@ For full documentation please refer to 'BWPluginAPI_Garment.h' in the plugin pac
 
 The code snippet below shows how to open a garment from file (.vsp, .vsgx, .bw or .dxf)
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   full_path = '<full path to the garment file>'
@@ -34,6 +35,7 @@ You can learn how to dress a garment [here.](../Garment-Creation/Dress-a-Garment
 The code snippet below shows how to save garment to file (.bw)
 Please note - saving garment to file will re-load the new garment automatically, this will generate a new garment id.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python

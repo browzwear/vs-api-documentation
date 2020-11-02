@@ -17,8 +17,10 @@ For more information, refer to: app installation folder\Resources\schema\\{versi
 The code snippet below shows how to add an asset library to VStitcher/Lotta. The library add function receives a JSON file (as a string) that contains all the library information. 
 
 <!--DOCUSAURUS_CODE_TABS-->
+
+
 <!--Python-->
-```py
+```python
   # assuming library_info is valid library info object
   asset_library_id = BwApi.AssetLibAdd(library_info)
 ```
@@ -41,6 +43,7 @@ The code snippet below shows how to add an asset library to VStitcher/Lotta. The
 ## Updating an asset library
 The code snippet below shows how to update an asset library in VStitcher/Lotta. The library add function receives a JSON file (as a string) that contains all the library information.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   # assuming library_info is valid library info object
@@ -63,6 +66,7 @@ The code snippet below shows how to update an asset library in VStitcher/Lotta. 
 
 The code snippet below shows how to get the asset library information from VStitcher/Lotta. The asset library get function returns a JSON  file (as a string) that contains all the asset library information.
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   library_info = BwApi.AssetLibGet(asset_library_id)
@@ -84,6 +88,7 @@ The code snippet below shows how to get the asset library information from VStit
 The code snippet below shows how to remove an asset library from VStitcher/Lotta.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   BwApi.AssetLibRemove(asset_library_id)
@@ -109,22 +114,25 @@ The supported events are:
  - BW_API_EVENT_ASSET_LIB_OPEN_EXTERNAL_LINK - if registered, the external link is enabled
  - BW_API_EVENT_ASSET_LIB_REFRESH
 <br/>
+
 <!--DOCUSAURUS_CODE_TABS-->
+
+
 <!--Python-->
 ```python
   class EventCallback(BwApi.CallbackBase):
-  def Run(self, garment_id, callback_id, data_string):
-    # callback for asset library initialazation
-    if (callbackId == 1){
-      # do some stuff here
-    }
-    return 1;
+    def Run(self, garment_id, callback_id, data_string):
+      # callback for asset library initialazation
+      if (callbackId == 1){
+        # do some stuff here
+      }
+      return 1
 
   callback = EventCallback()
 
   def BwApiPluginInit():
-   funcId = BwApi.AssetLibEventRegister(callback, 1, BwApi.BW_API_EVENT_ASSET_LIB_INITIALIZE);
-   return 1;
+    funcId = BwApi.AssetLibEventRegister(callback, 1, BwApi.BW_API_EVENT_ASSET_LIB_INITIALIZE)
+    return 1
 ```
 
 <!--C++-->
@@ -187,6 +195,7 @@ The supported events are:
 The code snippet below shows how to retrieve collection ids from an asset library.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   collection_ids = BwApi.AssetLibCollectionIds(asset_library_id)
@@ -209,6 +218,7 @@ The code snippet below shows how to retrieve collection ids from an asset librar
 The code snippet below shows how to get collection information from an asset library. The asset library collection get function returns a JSON file (as a string) that contains all the collection's information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\collection.json.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   collection_json = BwApi.AssetLibCollectionGet(asset_library_id, collection_id)
@@ -232,6 +242,8 @@ The code snippet below shows how to get collection information from an asset lib
 The code snippet below shows how to add a collection to the asset library. The asset library collection add function receives a JSON file (as a string) that contains all the collection's information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\collection.json.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
+
 <!--Python-->
 ```python
   BwApi.AssetLibCollectionAdd(asset_library_id, collection_json)
@@ -250,6 +262,8 @@ The code snippet below shows how to add a collection to the asset library. The a
 ## Removing a collection from an asset library
 The code snippet below shows how to remove a collection from an asset library. 
 <!--DOCUSAURUS_CODE_TABS-->
+
+
 <!--Python-->
 ```python
   BwApi.AssetLibCollectionRemove(asset_library_id, collection_id)
@@ -272,6 +286,7 @@ The code snippet below shows how to remove a collection from an asset library.
 The code snippet below shows how to get the asset ids from a collection.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   asset_ids = BwApi.AssetLibCollectionAssetIds(asset_library_id, collection_id)
@@ -293,6 +308,7 @@ The code snippet below shows how to get the asset ids from a collection.
 The code snippet below shows how to add an asset to a collection. 
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   BwApi.AssetLibCollectionAssetAdd(asset_library_id, collection_id, asset_id)
@@ -312,6 +328,7 @@ The code snippet below shows how to add an asset to a collection.
 ## Removing an asset from a collection
 The code snippet below shows how to remove an asset from a collection. 
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -334,6 +351,7 @@ The code snippet below shows how to remove an asset from a collection.
 The code snippet below shows how to get the asset ids from a asset library.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -358,6 +376,7 @@ The code snippet below shows how to get the asset ids from a asset library.
 The code snippet below shows how to add an asset to an asset library. The asset library asset add function receives a JSON file (as a string) that contains all the asset's information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\asset.json.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -383,6 +402,7 @@ The code snippet below shows how to add an asset to an asset library. The asset 
 ## Removing an asset from an asset library
 The code snippet below shows how to remove an asset from an asset library. 
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -407,6 +427,7 @@ The code snippet below shows how to remove an asset from an asset library.
 The code snippet below shows how to get asset information from an asset library. The asset library asset get function returns a JSON file (as a string) that contains all the asset's information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\asset.json.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -432,6 +453,7 @@ The code snippet below shows how to get asset information from an asset library.
 The code snippet below shows how to get the asset state information from an asset library. The asset library asset state get function returns a JSON  file (as a string) that contains all the asset state's information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\state.json.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 
 ```python
@@ -457,6 +479,7 @@ The code snippet below shows how to get the asset state information from an asse
 The code snippet below shows how to set the asset state in an asset library. The asset library asset state set function receives a JSON  file (as a string) that contains all the asset state's  information. For more information, refer to: app installation folder\Resources\schema\v2\asset-management\asset-library\state.json.
 <br/>
 <!--DOCUSAURUS_CODE_TABS-->
+
 <!--Python-->
 ```python
   # assuming asset_state_JSON is valid asset state object

@@ -42,14 +42,14 @@ Select all the Browzwear's API header files and click on 'Add'.
 10. Create a file named plugin.json in the plugin folder. refer to "..\BWPlugin\schema\plugin_manifest.json" for more information.</br>
    
     Example of plugin.json file:
-    ```{.json}
+```json
       {
         "identifier": {Your identifier},
         "name": {Your plugin name},
         "type": "cpp",
         "main": {Your dll path},
       }
-    ```
+```
     Note:
     * 'type' should always be cpp if you are using c/c++ to create your plugin.
     * In the 'main' section you can omit the extension from the path and it will be resolved by Browzwear.
@@ -62,7 +62,7 @@ All the below settings must be changed on x64 platform configuration.
 2. Change the 'Output Directory' to:
 ```cpp
     $(LOCALAPPDATA)\Browzwear\VStitcher\Plugins
- ```
+```
 4. In order to be able to debug the plugin, go to the Debugging section and change the command to:
 ```cpp
     $(ProgramW6432)\Browzwear\VStitcher\{VSTICHER-VERSION}\VStitcher.exe
@@ -100,14 +100,14 @@ Select all the Browzwear's API header files and click on 'Add'.
   <img src="../assets/xcode-3.png" width=500/>
 10. Create a file named plugin.json in the plugin folder. refer to "..\BWPlugin\schema\plugin_manifest.json" for more information.</br>
    Example of plugin.json file:
-    ```{.json}
+```json
       {
         "identifier": {Your identifier},
         "name": {Your plugin name},
         "type": cpp,
         "main": {Your dylib path},
       }
-    ```
+```
     Note:
 
       * 'type' should always be cpp if you using c/c++ to create your plugin.
