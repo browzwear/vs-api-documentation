@@ -1,0 +1,162 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* your custom css */
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .separateOnPageNav .docsNavContainer {
+    flex: 0 0 240px;
+    border-right: 1px solid #e8e8e8;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
+body {
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.tabs .nav-tabs > div.active {
+  border-bottom: 4px solid #f5af18;
+}
+.tab-content {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #002b36;
+  color: #839496;
+  border-radius: 10px;
+}
+.fixedHeaderContainer {
+  background: white;
+  border-bottom: #cfc8c8 solid 1px;
+  color: #fff;
+  min-height: 50px;
+  padding: 8px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  transform: translate3d(0, 0, 0);
+}
+input#search_input_react {
+  padding: 0 0 0 10px;
+  line-height: 1em;
+  top: 0;
+  left: 0;
+  position: relative;
+  height: 3em;
+  border-top: solid 1px #dcdcdc;
+  border-right: solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+  border-left: solid 1px #dcdcdc;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  color: #000000;
+  font-size: 1em;
+  padding-left: 10px;
+  background-color: #ffffff;
+  padding-right: 90px;
+}
+
+.reactNavSearchWrapper input#search_input_react {
+    height: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 38px;
+    color: #444;
+}
+ .headerTitleWithLogo {
+  color: #f5af18;
+}
+p {
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #444;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7em;
+  line-height: 1.9em;
+  margin-bottom: 12px;
+  margin-top: 22px;
+  color: #444;
+}
+code {
+  border-radius: 10px;
+}
+.button {
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding: 10px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: background 0.3s, color 0.3s;
+  background-color: #f5af18;
+}
+
+.navigationSlider .slidingNav ul li a {
+  background-color: white;
+  color: #444;
+}
+.navigationSlider .slidingNav ul li a[href="https://gitlab.com/browzwear/share/open-platform/client-api"] {
+  background-color: white;
+  content: url(../img/gitlab-icon-rgb.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navigationSlider .slidingNav ul li a:hover {
+  background-color: white;
+  color: #444;
+}
+.navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+  background-color: white;
+  color: #444;
+}
+a {
+  color: black;
+  text-decoration: none;
+  color: #f5af18;
+  font-weight: normal;
+  text-decoration: none;
+}
+.onPageNav .toc-headings > li > a.active, .onPageNav .toc-headings > li > a.hover {
+  font-weight: 600;
+  color: black;
+  border-left: 4px solid #f5af18;
+  margin-left: -16px;
+  padding-left: 12px;
+}
+.nav-tabs {
+  border-bottom: 0px;
+  margin: 4px;
+}
