@@ -1,5 +1,0 @@
----
-id: Simulation
-title: Simulation
----
-.
