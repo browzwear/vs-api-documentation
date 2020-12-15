@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Creating C++ plugin · Browzwear API</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Writing a plugin in C++ is different for Windows and Mac OS. Follow the relevant instructions for your OS."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Creating C++ plugin · Browzwear API"/><meta property="og:type" content="website"/><meta property="og:url" content="https://browzwear.github.io/vs-api-documentation/"/><meta property="og:description" content="Writing a plugin in C++ is different for Windows and Mac OS. Follow the relevant instructions for your OS."/><meta property="og:image" content="https://browzwear.github.io/vs-api-documentation/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://browzwear.github.io/vs-api-documentation/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/vs-api-documentation/img/header_logo.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/vs-api-documentation/js/scrollSpy.js"></script><link rel="stylesheet" href="/vs-api-documentation/css/prism.css"/><link rel="stylesheet" href="/vs-api-documentation/css/main.css"/><script src="/vs-api-documentation/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/vs-api-documentation/"><img class="logo" src="/vs-api-documentation/img/header_logo.png" alt="Browzwear API"/><h2 class="headerTitleWithLogo">Browzwear API</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/vs-api-documentation/docs/Introduction/Introduction" target="_self">Docs</a></li><li class=""><a href="https://gitlab.com/browzwear/share/open-platform/client-api" target="_blank"></a></li><li class=""><a target="_self"></a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Introduction<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Introduction/Introduction">Introduction</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Getting Started<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Getting-Started/License-and-Authentication">License and Authentication</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Getting-Started/Understanding-The-API">Understanding the API</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Getting-Started/Sample-Plugins">Sample Plugins</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Getting-Started/Create-plugin-python">Creating Python plugin</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/vs-api-documentation/docs/Getting-Started/Create-plugin-cpp">Creating C++ plugin</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Getting-Started/Create-plugin-csharp">Creating C# plugin</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Getting-Started/Development">Development</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Getting-Started/Deployment">Deployment</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Asset Management<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Asset-Management/Asset-Library">Asset Library</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Asset-Management/Colors">Colors</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Asset-Management/Material">Material</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Asset-Management/Avatars">Avatars</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Asset-Management/Garments">Garments</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Techpack<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Techpack/Create-a-tech-pack">Create a Tech pack</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Techpack/Tech-pack-output">Tech pack output - JSON</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Techpack/Point-of-Measurements">Point of Measurements</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Techpack/Bill-of-Material">Bill of Material</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Outputs Export<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Outputs-Export/Outputs">Outputs</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Garment Creation<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Garment-Creation/Create-Shape">Create Shape</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Garment-Creation/Create-Edge">Create Edge</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Garment-Creation/Arrange-Shape">Arrange Shape</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Garment-Creation/Stitch-Shapes">Stitch Shapes</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Garment-Creation/Assign-Material">Assign Material</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Garment-Creation/Create-Avatar">Create an Avatar</a></li><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Garment-Creation/Dress-a-Garment">Dress a Garment</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Colorways<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Colorways/Colorways">Colorways</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Smart Design<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Smart-Design/Configure-Smart-Design-Template">Configure Smart Design Template</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Costing<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Costing/Costing">Costing</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Terms of Use<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Terms-of-Use">Terms of Use</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Change log<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/vs-api-documentation/docs/Change-log">Change log</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Creating C++ plugin</h1></header><article><div><span><p>Writing a plugin in C++ is different for Windows and Mac OS. Follow the relevant instructions for your OS.</p>
+<h2><a class="anchor" aria-hidden="true" id="windows"></a><a href="#windows" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Windows</h2>
+<h3><a class="anchor" aria-hidden="true" id="prerequisite"></a><a href="#prerequisite" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prerequisite</h3>
+<ul>
+<li>Windows 8 with SP1 or higher</li>
+<li>Visual Studio 13 or higher</li>
+<li>Visual C++ 11</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="creation-process"></a><a href="#creation-process" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creation process</h3>
+<ol>
+<li>Install VStitcher.</li>
+<li>Open Visual Studio.</li>
+<li>Go to File -&gt; New -&gt; Project.</li>
+<li>In the New project wizard, choose Visual C++ -&gt; Win32 -&gt; Win32 Project.
+Set your desired project name and location and click 'OK'.<br/>
+<img src="../assets/vs-1.png" width=500/></li>
+<li>On the Win32 Application Wizard, click 'Next'.</li>
+<li>On the Application Settings page, select 'DLL' as the application type, and under Additional options check the 'Empty project' option. <br/>
+Click 'Finish'. <br/>
+<img src="../assets/vs-2.png" width=500/></li>
+<li>This document is part of a plugin package that also contains Browzwear API header files and a library file (BwPluginApi.lib). Copy these files (while maintaining the folder structure) to your project directory.</li>
+<li>Add the Browzwear API header files to your project via Project menu -&gt; Add Existing Item... <br/>
+Select all the Browzwear's API header files and click on 'Add'.</li>
+<li>Add new source file and add the following code:</li>
+</ol>
+<pre><code class="hljs css language-cpp"><span class="token comment">// this will add all the relevant includes</span>
+<span class="token comment">// this will also link to the library file.</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"BwPluginApi.h"</span></span>
+
+<span class="token comment">// implement initialization function</span>
+<span class="token keyword">int</span> BW_PLUGIN_EXPORT <span class="token function">BwApiPluginInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// return 1 for successful initialization</span>
+  <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ol start="10">
+<li><p>Create a file named plugin.json in the plugin folder. refer to &quot;..\BWPlugin\schema\plugin_manifest.json&quot; for more information.</br></p>
+<p>Example of plugin.json file:</p></li>
+</ol>
+<pre><code class="hljs css language-json"><span class="token punctuation">{</span>
+  <span class="token property">"identifier"</span><span class="token operator">:</span> <span class="token punctuation">{</span>Your identifier<span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token punctuation">{</span>Your plugin name<span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"cpp"</span><span class="token punctuation">,</span>
+  <span class="token property">"main"</span><span class="token operator">:</span> <span class="token punctuation">{</span>Your dll path<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre><code class="hljs">Note:
+* 'type' should always be cpp if you are using c/c++ to create your plugin.
+* In the 'main' section you can omit the extension from the path and it will be resolved by Browzwear.
+</code></pre>
+<p>To use this plugin, you first need to update the project's settings.</p>
+<h3><a class="anchor" aria-hidden="true" id="project-settings"></a><a href="#project-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Project Settings</h3>
+<p>All the below settings must be changed on x64 platform configuration.</p>
+<ol>
+<li>Go to Project menu -&gt; [PROJECT_NAME] Properties…</li>
+<li>Change the 'Output Directory' to:</li>
+</ol>
+<pre><code class="hljs css language-cpp">$<span class="token punctuation">(</span>LOCALAPPDATA<span class="token punctuation">)</span>\Browzwear\VStitcher\Plugins
+</code></pre>
+<ol start="4">
+<li>In order to be able to debug the plugin, go to the Debugging section and change the command to:</li>
+</ol>
+<pre><code class="hljs css language-cpp">$<span class="token punctuation">(</span>ProgramW6432<span class="token punctuation">)</span>\Browzwear\VStitcher\<span class="token punctuation">{</span>VSTICHER<span class="token operator">-</span>VERSION<span class="token punctuation">}</span>\VStitcher<span class="token punctuation">.</span>exe
+</code></pre>
+<p>That's it, you just created your first plugin.</p>
+<h2><a class="anchor" aria-hidden="true" id="mac-os"></a><a href="#mac-os" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mac OS</h2>
+<h3><a class="anchor" aria-hidden="true" id="prerequisite-1"></a><a href="#prerequisite-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prerequisite</h3>
+<ul>
+<li>Mac OS 10.9 or higher</li>
+<li>Xcode 7.0 or higher</li>
+<li>Apple SDK Base: 10.9</li>
+<li>Apple OS X Deployment Target: 10.9</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="creation-process-1"></a><a href="#creation-process-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creation process</h3>
+<ol>
+<li>Install VStitcher.</li>
+<li>Open Xcode.</li>
+<li>Go to File -&gt; New -&gt; New Project.</li>
+<li>In the New Project Assistant, choose OS X -&gt; Framework &amp; Library -&gt; Library and click Next. <br/>
+<img src="../assets/xcode-1.png" width=500/></li>
+<li>Set the project name, organization name and identifier, and under the Framework choose either ‘STL (C++ Library)’ or ‘None (Plain C/C++ Library)’. The type of the project must be ‘Dynamic’. Then click ‘Next’. <br/>
+<img src="../assets/xcode-2.png" width=500/></li>
+<li>Set the project directory and click 'Create'.</li>
+<li>This document is part of the plugin package that also contains Browzwear API header files. Copy these files (while maintaining the folder structure) to your project directory.</li>
+<li>Add the Browzwear API header files to your project via File menu -&gt; Add Files to 'PROJECT_NAME'...<br>
+Select all the Browzwear's API header files and click on 'Add'.</li>
+<li>In order to work with the Browzwear API you need to import the Browzwear API library (libBwPluginAPI.dylib) to this project.</li>
+</ol>
+<ul>
+<li>Open ‘Finder’ window.</li>
+<li>Go to ‘/Applications/Browzwear’.</li>
+<li>Right click on the VStitcher app file -&gt; Show Package Contents.</li>
+<li>Go to Contents/MacOS.</li>
+<li>Drag the libBwPluginAPI.dylib file to your Xcode project.</li>
+<li>Xcode will ask you to select the target to add this file to. Make sure that the right target is selected and that the ‘Copy items if needed’ is not selected.<br/>  <br>
+<img src="../assets/xcode-3.png" width=500/></li>
+</ul>
+<ol start="10">
+<li>Create a file named plugin.json in the plugin folder. refer to &quot;..\BWPlugin\schema\plugin_manifest.json&quot; for more information.</br>
+Example of plugin.json file:</li>
+</ol>
+<pre><code class="hljs css language-json"><span class="token punctuation">{</span>
+  <span class="token property">"identifier"</span><span class="token operator">:</span> <span class="token punctuation">{</span>Your identifier<span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token punctuation">{</span>Your plugin name<span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"type"</span><span class="token operator">:</span> cpp<span class="token punctuation">,</span>
+  <span class="token property">"main"</span><span class="token operator">:</span> <span class="token punctuation">{</span>Your dylib path<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre><code class="hljs">Note:
+
+  * 'type' should always be cpp if you using c/c++ to create your plugin.
+  * In the 'main' section you can omit the extension from the path and it will be resolved by Browzwear.
+</code></pre>
+<p><br/><br/>
+To use this plugin, you first need to change the project's settings.</p>
+<h3><a class="anchor" aria-hidden="true" id="project-settings-1"></a><a href="#project-settings-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Project Settings</h3>
+<ol>
+<li>Go to the target settings and select your Plugin’s target -&gt; Build Settings, look for the ‘Executable Prefix’ and change it from ‘lib’ to ‘bwplugin’. <br/>
+<img src="../assets/xcode-4.png" width=500/></li>
+<li>VStitcher will load the plugins from ‘~/Library/Application Support/Browzwear/VStitcher/Plugins’ folder.</li>
+</ol>
+<ul>
+<li>Go to the plugin’s target settings -&gt; Build Settings, look for ‘Build Location’.</li>
+<li>Set the ‘Pre-configuration Build Products Path’ setting to ~/Library/Application Support/Browzwear/VStitcher/Plugins.</li>
+</ul>
+<ol start="3">
+<li>Go to Product -&gt; Scheme -&gt; Edit Scheme, under ‘Executable’ change this to ‘Ask on Launch’ or to the VStitcher app.</li>
+</ol>
+<p>That's it! You just created your first plugin.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/vs-api-documentation/docs/Getting-Started/Create-plugin-python"><span class="arrow-prev">← </span><span>Creating Python plugin</span></a><a class="docs-next button" href="/vs-api-documentation/docs/Getting-Started/Create-plugin-csharp"><span>Creating C# plugin</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#windows">Windows</a><ul class="toc-headings"><li><a href="#prerequisite">Prerequisite</a></li><li><a href="#creation-process">Creation process</a></li><li><a href="#project-settings">Project Settings</a></li></ul></li><li><a href="#mac-os">Mac OS</a><ul class="toc-headings"><li><a href="#prerequisite-1">Prerequisite</a></li><li><a href="#creation-process-1">Creation process</a></li><li><a href="#project-settings-1">Project Settings</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/vs-api-documentation/" class="nav-home"><img src="/vs-api-documentation/img/header_logo.png" alt="Browzwear API" width="66" height="58"/></a><div><h5>Community</h5><a>Forum</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://il.linkedin.com/company/browzwear" target="_blank" rel="noreferrer noopener">Linkedin</a></div><div><h5>More</h5><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/vs-api-documentation/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 Browzwear</section></footer></div></body></html>
