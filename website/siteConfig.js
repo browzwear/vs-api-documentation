@@ -13,10 +13,10 @@
 const siteConfig = {
   title: 'Browzwear API',
   tagline: 'DISCOVER BROWZWEAR’S OPEN PLATFORM.',
-  url: 'https://RaayaBw.github.io', // Replace USERNAME with your GitHub username.
-  baseUrl: '/bw-api-docs/', // The name of your GitHub project.
-  projectName: 'bw-api-docs',
-  organizationName: 'RaayaBw',
+  url: 'https://browzwear.github.io', // Replace USERNAME with your GitHub username.
+  baseUrl: '/vs-api-documentation/', // The name of your GitHub project.
+  projectName: 'vs-api-documentation',
+  organizationName: 'browzwear',
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'Introduction/Introduction', label: 'Docs'},
@@ -42,11 +42,7 @@ const siteConfig = {
       'Open Sans'
     ],
   },
-  // algolia: {
-  //   apiKey: '720d68a9a99bae2f0ac49c90d78d68ad',
-  //   indexName: 'test_API_DOCS',
-  //   placeholder: ' '
-  // },
+
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Browzwear`,
 
@@ -77,9 +73,6 @@ const siteConfig = {
   // Show documentation's last update time.
   // enableUpdateTime: true,
 
-  // You may provide arbitrary config keys to be used as needed by your
-  // template. For example, if you need your repo's URL...
-  // repoUrl: 'https://github.com/facebook/test-site',
 };
 
 module.exports = siteConfig;
