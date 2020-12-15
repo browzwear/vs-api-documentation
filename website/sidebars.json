@@ -1,0 +1,55 @@
+{
+  "docs": {	
+	"Introduction":["Introduction/Introduction"],
+  "Getting Started": [
+		"Getting-Started/License-and-Authentication",
+		"Getting-Started/Understanding-The-API",
+		"Getting-Started/Sample-Plugins",
+		"Getting-Started/Create-plugin-python",
+		"Getting-Started/Create-plugin-cpp",
+		"Getting-Started/Create-plugin-csharp",
+		"Getting-Started/Development",
+		"Getting-Started/Deployment"
+  ],
+	"Asset Management": [
+		"Asset-Management/Asset-Library",
+		"Asset-Management/Colors",
+		"Asset-Management/Material",
+		"Asset-Management/Avatars",
+		"Asset-Management/Garments"
+	],
+	"Techpack": [
+		"Techpack/Create-a-tech-pack",
+		"Techpack/Tech-pack-output",
+		"Techpack/Point-of-Measurements",
+		"Techpack/Bill-of-Material"
+	],
+	"Outputs Export": [
+		"Outputs-Export/Outputs"
+	],
+	"Garment Creation": [
+		"Garment-Creation/Create-Shape",
+		"Garment-Creation/Create-Edge",
+		"Garment-Creation/Arrange-Shape",
+		"Garment-Creation/Stitch-Shapes",
+		"Garment-Creation/Assign-Material",
+		"Garment-Creation/Create-Avatar",
+		"Garment-Creation/Dress-a-Garment"
+], 
+	"Colorways": [
+		"Colorways/Colorways"
+], 
+	  "Smart Design": [
+		"Smart-Design/Configure-Smart-Design-Template"
+], 
+	"Costing": [
+		"Costing/Costing"
+],
+	"Terms of Use": [
+	"Terms-of-Use"
+],
+	"Change log": [
+	"Change-log"
+	]
+  }
+}
