@@ -3,16 +3,21 @@ id: Introduction
 title: Introduction
 ---
 
-Browzwear's plugin mechanism allows you to extend or change the behavior of Browzwear’s applications.  
+## Welcome to Browzwear’s API
 
-Plugins can be written in C, C++, Python, and C#.
+Browzwear’s API gives developers the ability to seamlessly create and integrate plugins as a means to enhance and extend the capabilities of the software. Therefore, providing a fast and efficient way to connect external applications to in-house processes.
 
-The Browzwear plugin architecture is very powerful. Plugins have access to garment, shapes, clusters, stitches, materials, and so on.  You can create plugins that import your own model’s format or export garments to your format.
+With a robust API mechanism, companies can effectively build, manage, and customize an entirely digital end-to-end apparel workflow.
+ 
+Browzwear’s API architecture enables you to access an extensive range of features including garments, shapes, clusters, stitches, materials, and more. Plugins can be created to import your own model’s format or to export garments according to your existing format
 
-This documentation is part of a package which contains:
+API documentation is available for plugins development in C, C++, Python, and C#.
+
+Everything you need to start building with Browzwear: 
+
 * Fully documented header files + helper classes
-* This documentation in markdown format
+* Documentation in markdown format
 * Library file for C/C++ plugin
 * Sample plugins in C++, Python, and C#
-* License
+* VStitcher Cloud License
 
