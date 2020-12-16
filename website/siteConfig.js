@@ -13,10 +13,11 @@
 const siteConfig = {
   title: 'Browzwear API',
   tagline: 'DISCOVER BROWZWEAR’S OPEN PLATFORM.',
-  url: 'https://browzwear.github.io', // Replace USERNAME with your GitHub username.
-  baseUrl: '/vs-api-documentation/', // The name of your GitHub project.
+  url: 'developer.browzwear.com',
+  baseUrl: '/',
   projectName: 'vs-api-documentation',
   organizationName: 'browzwear',
+  cname: 'developer.browzwear.com',
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'Introduction/Introduction', label: 'Docs'},
