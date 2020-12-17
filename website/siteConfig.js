@@ -21,7 +21,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'Introduction/Introduction', label: 'Docs'},
-    {href: "https://gitlab.com/browzwear/share/open-platform/client-api", label: "", external: true },
+    {href: "https://gitlab.com/browzwear/share/open-platform/client-api", label: "GitLab", external: true },
     {search: false},
   ],
 

@@ -24,45 +24,21 @@ class Footer extends React.Component {
               <img
                 src={this.props.config.baseUrl + this.props.config.footerIcon}
                 alt={this.props.config.title}
-                width="66"
-                height="58"
               />
             )}
           </a>
           <div>
-            <h5>Community</h5>
+            <h5>FIND US</h5>
+            <a href="https://gitlab.com/browzwear/share/open-platform/client-api/">GitLab</a>
             <a
               href="https://il.linkedin.com/company/browzwear"
               target="_blank"
               rel="noreferrer noopener">
               Linkedin
             </a>
-          </div>
-          <div>
-            <h5>More</h5>
-            <a href="https://gitlab.com/browzwear/share/open-platform/client-api/">GitLab</a>
-            {this.props.config.twitterUsername && (
-              <div className="social">
-                <a
-                  href={`https://twitter.com/${this.props.config.twitterUsername}`}
-                  className="twitter-follow-button">
-                  Follow @{this.props.config.twitterUsername}
-                </a>
-              </div>
-            )}
-            {this.props.config.facebookAppId && (
-              <div className="social">
-                <div
-                  className="fb-like"
-                  data-href={this.props.config.url}
-                  data-colorscheme="dark"
-                  data-layout="standard"
-                  data-share="true"
-                  data-width="225"
-                  data-show-faces="false"
-                />
-              </div>
-            )}
+            <a href="https://twitter.com/browzwear">Twitter</a>
+            <a href="https://www.instagram.com/browzwear/">Instagram</a>
+            <a href="https://www.facebook.com/browzwear/">Facebook</a>
           </div>
         </section>
         <section className="copyright">{this.props.config.copyright}</section>
