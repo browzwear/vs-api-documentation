@@ -122,7 +122,7 @@ BwApi.MaterialGet(garmentId, colorwayId, materialId, out materialJson);
 
 ### Result
 
-material json object as string containing all the material's information. see <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/schema/api/v2.0/material/material.json" target="_blank">schema</a>
+material json object as a string containing all the material's information. see <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/schema/api/v2.0/material/material.json" target="_blank">schema</a>
 
 ## Deleting a Material
 

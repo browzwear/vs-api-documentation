@@ -15,7 +15,7 @@ C++:
 ```cpp
 BwString garmentId;
 BwApiGarmentCreate('Garment Name', garmentId);
-std::string garmendIdStr = garmentId.c_str(); // garment id as string
+std::string garmendIdStr = garmentId.c_str(); // garment id as a string
 ```
 C#:
 ```csharp

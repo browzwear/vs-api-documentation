@@ -149,7 +149,7 @@ Sometimes it is useful to add some custom data to be attached to the shape in st
 
 Python:
 ```python
-# store an external shape id as string
+# store an external shape id as a string
 BwApi.ShapeUserDataStrSet(garmentId, shapeId, 'shape_external_id', 'SID:123456')
 
 # get the string previously stored
@@ -157,7 +157,7 @@ resString = BwApi.ShapeUserDataStrGet(garmentId, shapeId, 'shape_external_id')
 ```
 C++:
 ```cpp
-// store an external shape id as string
+// store an external shape id as a string
 const char* strIn = "SID:123456";
 BwApiShapeUserDataStrSet(garmentId, shapeId, "shape_external_id", strIn);
 
@@ -167,7 +167,7 @@ BwApiShapeUserDataStrGet(garmentId, shapeId, "shape_external_id", &strOut);
 ```
 C#:
 ```csharp
-// store an external garment id as string
+// store an external garment id as a string
 BwApi.ShapeUserDataStrSet(garmentId, shapeId, "shape_external_id", "SID:123456");
 
 // get the string previously stored

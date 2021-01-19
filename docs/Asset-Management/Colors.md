@@ -14,7 +14,7 @@ Sample plugin for the color library is available <a href="https://gitlab.com/bro
 ## Creating a Color Library
 ### Code Snippet
 Browzwear allow you to programmatically add a new color library to the Browzwear's app.
-The API for creating a new color library receive JSON (as string) that contains all the information and colors for this library. For more information, refer to: schema/color/color-lib.json
+The API for creating a new color library receives a JSON (as a string) that contains all the information and colors for this library. For more information, refer to: schema/color/color-lib.json
 
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -103,4 +103,4 @@ BwApi.ColorLibraryGetColors(garmentId, colorLibId, out colors);
 <br/>
 
 ### Result
-JSON object as string that represent a list of color objects within the given library.<br> see <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/schema/api/v1.0/color/color.json" target="_blank">schema</a>. 
+JSON object as a string that represent a list of color objects within the given library.<br> see <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/blob/master/BWPlugin/schema/api/v1.0/color/color.json" target="_blank">schema</a>. 
