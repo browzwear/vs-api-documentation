@@ -52,6 +52,11 @@ const siteConfig = {
     theme: 'solarized-dark'
   },
 
+  algolia: {
+    apiKey: 'b61bd3b8ea0466c16241bbc51bda086e',
+    indexName: 'browzwear'
+  },
+
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ['https://buttons.github.io/buttons.js'],
 

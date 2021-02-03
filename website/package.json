@@ -12,6 +12,7 @@
     "docusaurus": "^1.14.6"
   },
   "dependencies": {
-    "core-js": "^3.6.5"
+    "core-js": "^3.6.5",
+    "immer": "^8.0.1"
   }
 }
