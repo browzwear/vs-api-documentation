@@ -3,9 +3,9 @@ id: Understanding-The-API
 title: Understanding the API
 ---
 
-## API functions
+## API Functions
 The API is based on C functions and is ported automatically to Python and C#.
-The API for all programming languages mentioned above is the same with a slight difference:  while C/C++ API contains a BwApi prefix to the function name, Python and C# treats this as a namespace. 
+The API for all programming languages mentioned above is the same with a slight difference:  while the C/C++ API contains a BwApi prefix to the function name, the Python and C# APIs both treat this as a namespace. 
 For example the function for creating a garment looks as follows for each language:
 
 C++:
@@ -21,7 +21,7 @@ C#:
 BwApi.GarmentCreate("Garment Name", ...);
 ```
 
-For C/C++ only, in order to avoid having different STL versions, there is a built-in support for data types like string and vectors that you should use in order to retrieve or push data to the API.
+For C/C++ only, in order to avoid having different STL versions, there is built-in support for data types like string and vectors that you should use in order to retrieve or push data to the API.
 For example:
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -60,21 +60,21 @@ Create a file named plugin.json in the plugin folder with the following <a href=
 ### Properties
 #### identifier
 Unique plugin identifier. <br>
-We recommend using format like: com.companyname.pluginname. <br>
-Identifier will always be saved in lower case. <br>
+We recommend using a format like: com.companyname.pluginname. <br>
+The identifier is always saved in lower case. <br>
  
 #### name
 Your plugin name. <br>
-In case a menu item will be added, the name of the plugin will be used as the top level menu.
+If a menu item is added, the name of the plugin is used as the top level menu.
 
 #### type
-Your programming language - CPP/Python/C#
+Your programming language - CPP/Python/C#.
 
 #### version
-Your plugin version
+Your plugin version.
 
 #### main
-source code (Python package folder name/dll name)
+source code (Python package folder name/dll name).
     
 #### dependencies
 npm semver compatible string representing range of versions the plugin is compatible with. 
@@ -84,7 +84,7 @@ For more information see https://www.npmjs.com/package/semver.
 Add every remote URL that you are using to the whitelist.
 
 #### htmlroot
-Root to your html resources.
+Root for your html resources.
 
 ### Example
 ```
