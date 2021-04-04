@@ -16,7 +16,7 @@ To view the Plugin Manager open VStitcher/Lotta -> Preferences -> Plugins.
 5. Status: Shows the current status of a plugin.
 6. Reload: Upon failure, the reload button appears: the yellow diamond with exclamation mark. You may attempt to fix the problem and try again to load the plugin.
 
-## Add menu item to the Plugins menu
+## Add Menu Item to the Plugins Menu
 
 You can add menu items to your plugin in order to run operations in VStitcher. </br>
 Note: You will see your menu item under "Plugins" if at least one menu item exists.
@@ -88,12 +88,12 @@ class SamplePluginCallback : CallbackBase
 <!--END_DOCUSAURUS_CODE_TABS-->
 
 
-## Creating an external html window
+## Creating an External HTML Window
 <a href="https://gitlab.com/browzwear/share/open-platform/client-api/-/tree/master/boilerplates/ui-elements" target="_blank">Here</a> you can find a boilerplate for creating an external html window.
 
-## Register to system events
+## Register for System Events
 You can register your plugin to be notified when certain system events happen. <br/>
-The support events are: POST_INTIALIZE (Browzwear UI is ready), GARMENT_OPEN, GARMENT_NEW, GARMENT_SAVED, GARMENT_CLOSED, and GARMENT_MODIFIED.
+The supported events are: POST_INTIALIZE (Browzwear UI is ready), GARMENT_OPEN, GARMENT_NEW, GARMENT_SAVED, GARMENT_CLOSED, and GARMENT_MODIFIED.
 
 <!--DOCUSAURUS_CODE_TABS-->
 
@@ -166,9 +166,9 @@ class BwApiPlugin
 <!--END_DOCUSAURUS_CODE_TABS-->
 
 
-## Multithreaded plugin
+## Multithreaded Plugin
 
-All API calls should be invoked from main thread only, if your plugin is a multithreaded plugin you can ask Browzwear to perform an operation. 
+All API calls should be invoked from the main thread only. If your plugin is a multithreaded plugin you can ask Browzwear to perform an operation. 
 
 For example, you can create your own thread that listens to file changes and when that file changes you can ask Browzwear to perform the plugin operation.
 
