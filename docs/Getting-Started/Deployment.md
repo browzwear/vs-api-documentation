@@ -3,9 +3,9 @@ id: Deployment
 title: Deployment
 ---
 
-## Deploy your plugins with external library
+## Deploy your Plugins with External Library
 
-VStitcher / Lotta installation already come with Python 3.7.8
+VStitcher/Lotta installations come with Python 3.7.8 included.
 
 1. Install the packages in the plugin folder:```<Browzwear installation folder>/python/bin/python -m pip install <package name> -t <plugin folder>```
 (-t stands for target.)
