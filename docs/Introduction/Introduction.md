@@ -5,7 +5,7 @@ title: Introduction
 
 ## Welcome to Browzwear’s API
 
-Browzwear’s API gives developers the ability to seamlessly create and integrate plugins as a means to enhance and extend the capabilities of the software. Therefore, providing a fast and efficient way to connect external applications to in-house processes.
+Browzwear’s API gives developers the ability to seamlessly create and integrate plugins as a means to enhance and extend the capabilities of the software, providing a fast and efficient way to connect external applications to in-house processes.
 
 With a robust API mechanism, companies can effectively build, manage, and customize an entirely digital end-to-end apparel workflow.
  
