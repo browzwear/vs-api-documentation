@@ -16,30 +16,100 @@ That's it! Now you'll see your plugin under the "Plugins" tab. <br>
 Follow the "TODO" in "main.py" to configure your plugin
 
 
-## Debug your plugin with Eclipse 
-1. Install Eclipse.
-2. Open your plugin project: File > Open Projects From File System and import your plugin.
-3. Configure Python interpreter: 
-    * Select manual config
-      ![](../assets/manual-config.png)
-    * Select **Browse for python/pypy exe** 
-Go to your Browzwear folder and select Python folder. <br>For example :  %ProgramFiles%\Browzwear\VStitcher\{YOUR-VSTITCHER-VERSION}\Python
-![](../assets/browse.png)
-    * Select Ok
-    ![](../assets/select-ok.png)
-4. Add your plugin to VStitcher.
-5. At the beginning of the init function (BwApiPluginInit):
-    * Add the following line:
-    ![](../assets/use-frame.png)
-    * start writing pydev and choose the settrace() option as follow:
-  ![](../assets/pydev.png)
-6. As a result the following lines will be added:
-![](../assets/lines-pydev.png)
-7. Add trace_only_current_thread=True as parameter to pydevd.settrace function:
-![](../assets/set-trace.png)
-8. Open the **Debug** perspective: **Click Window > Perspective > Open Perspective > Other ...**
-9. Select the Debug perspective.
-10. Start pyDev server using this button: 
-![](../assets/debug.png)
+## Debug your plugin using Visual Studio Code
+
+### Prerequisites
+
+- VStitcher or Lotta 2021.2.0 or newer installed
+- Visual Studio Code installed
+- You have a working plugin which you would like to debug
+- You have added the plugin to VStitcher or Lotta
+
+### Install debugpy Library
+Open terminal and run the following commands.
+
+Windows:
+```
+cd {YOUR PLUGIN FOLDER - where plugin.json is located}
+
+"%programfiles%\Browzwear\VStitcher\2021.1\python\bin\python.exe" -m pip install debugpy -t ./lib
+```
+
+Mac:
+```
+cd {YOUR PLUGIN FOLDER - where plugin.json is located}
+"/Applications/Browzwear/VStitcher 2021.1.app/Contents/Resources/python/bin/python3.7" -m pip install debugpy -t ./lib
+```
+
+debugpy is downloaded to your {plugin source folder}/lib
 
 
+### Prepare Visual Studio Code
+First, create the launch.json configuration file as described here: https://code.visualstudio.com/docs/python/debugging#_initialize-configurations
+
+Then, enter the following in the launch.json file.
+``` JS
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "Debug BW Plugin",
+    "type": "python",
+    "request": "attach",
+    "connect": {
+      "host": "localhost",
+      "port": 5678
+    }
+  }]
+}
+```
+
+### Modify the Plugin Code
+
+To be able to debug the plugin you need to change the plugin so that it uses debugpy.
+To change the plugin:
+
+1. Add the plugin folder to Visual Studio Code.
+2. Within your BwApiPluginInit implementation add the following code.
+``` PY
+# add the lib folder to sys.path
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'lib'))
+
+import debugpy
+# 5678 is the default attach port in the VS Code debug configurations. Unless a host and port are specified, host defaults to 127.0.0.1
+# for further information see https://code.visualstudio.com/docs/python/debugging#_debugging-by-attaching-over-a-network-connection
+
+if sys.platform == 'win32':
+    debugpy.configure(python=os.path.join(sys.base_exec_prefix, 'bin', 'python.exe'))
+ else:
+    debugpy.configure(python=os.path.join(sys.base_exec_prefix, 'bin', 'python3.7'))
+
+debugpy.listen(5678)
+print("Waiting for debugger attach")
+debugpy.wait_for_client()
+debugpy.breakpoint()
+print('break on this line')
+```
+
+### Run VStitcher With Option to Debug Plugins
+
+Now run VStitcher with the --plugin-sandbox argument.
+
+Windows:
+`"%programfiles%\Browzwear\VStitcher\2021.1\VStitcher.exe" --plugin-sandbox`
+
+Mac:
+`"/Applications/Browzwear/VStitcher 2021.1.app/Contents/MacOS/VStitcher" --plugin-sandbox`
+
+### Debug the Plugin
+
+1. Open VStitcher. VStitcher hangs and waits for the debugger to attach.
+2. Go back to Visual Studio Code and click the Debug tab.
+
+![](../assets/create-plugin-python/debug.png)
+
+3. Click the green debug button next to Debug BW Plugin.
+![](../assets/create-plugin-python/run-and-debug.png)
+The debugger should now connect to your plugin and stop at the debugpy.breakpoint line.
+
+4. Use Visual Studio Code to add breakpoints and debug your plugin.
