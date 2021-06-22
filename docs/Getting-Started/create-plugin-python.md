@@ -20,7 +20,7 @@ Follow the "TODO" in "main.py" to configure your plugin
 
 ### Prerequisites
 
-- VStitcher or Lotta 2021.2.0 or newer installed
+- VStitcher or Lotta **2021.2.0** or newer installed
 - Visual Studio Code installed
 - You have a working plugin which you would like to debug
 - You have added the plugin to VStitcher or Lotta
@@ -31,7 +31,6 @@ Open terminal and run the following commands.
 Windows:
 ```
 cd {YOUR PLUGIN FOLDER - where plugin.json is located}
-
 "%programfiles%\Browzwear\VStitcher\2021.1\python\bin\python.exe" -m pip install debugpy -t ./lib
 ```
 
@@ -113,3 +112,9 @@ Mac:
 The debugger should now connect to your plugin and stop at the debugpy.breakpoint line.
 
 4. Use Visual Studio Code to add breakpoints and debug your plugin.
+
+### Deploying the Plugin
+
+The argument --plugin-sandbox sets all plugins to work on the same python interpreter. This may cause security issues, but does allow the plugin to be debugged.
+
+Whoever uses the plugin will run the plugin without that argument. Therefore, it’s the developer’s responsibility to check, before deploying the plugin, that it will work without --plugin-sandbox.  
