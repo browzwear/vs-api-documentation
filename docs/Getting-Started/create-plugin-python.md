@@ -115,6 +115,6 @@ The debugger should now connect to your plugin and stop at the debugpy.breakpoin
 
 ### Deploying the Plugin
 
-The argument --plugin-sandbox sets all plugins to work on the same python interpreter. This may cause security issues, but does allow the plugin to be debugged.
+The argument **--plugin-sandbox** sets all plugins to work on the same python interpreter. This may cause security issues, but does allow the plugin to be debugged.
 
 Whoever uses the plugin will run the plugin without that argument. Therefore, it’s the developer’s responsibility to check, before deploying the plugin, that it will work without --plugin-sandbox.  
